@@ -13,7 +13,7 @@
 # return value
 # - true: success / false: error
 
-p_filename=${prefix}/${p_conf}/kernel/${kernel};
+p_filename=${prefix}/${p_conf}/${kernel};
 p_loadaddr=${kernel_addr_r};
 if run m_load; then
   if test ${dbglevel} -gt 0; then
@@ -24,6 +24,6 @@ else
   if test ${errlevel} -gt 0; then
     echo [m_load_kernel]Loading kernel image from ${p_class}:${p_device}:${p_filename} failed!;
   fi;
-  false;  
+  false;
 fi;
 # vim:ft=sh
