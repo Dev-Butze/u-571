@@ -342,7 +342,7 @@ its unique identifier (eg. `UUID=<uuid-value>`).
 
 Suggestion
 
-- /Boot/conf.d/u0p1/ for USB0 Partiton 1
+- /boot/conf.d/u0p1/ for USB0 Partiton 1
 - /boot/conf.d/s0p2/ for SATA0 Partition 2
 - on the first partition , usually eMMC or µSD
 
